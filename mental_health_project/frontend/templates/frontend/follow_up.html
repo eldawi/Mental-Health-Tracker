@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Follow Up for a Patient</title>
+</head>
+<body>
+    <h1>Follow Up for a Patient</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="patient_id">Enter Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id">
+        <label for="follow_up_details">Enter Follow Up Details:</label>
+        <input type="text" id="follow_up_details" name="follow_up_details">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>

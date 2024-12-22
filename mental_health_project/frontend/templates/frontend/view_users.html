@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View All Users</title>
+</head>
+<body>
+    <h1>All Users</h1>
+    <h2>Patients</h2>
+    <ul>
+        {% for patient in data.patients %}
+            <li>{{ patient.name }} (ID: {{ patient.id }})</li>
+        {% endfor %}
+    </ul>
+    <h2>Users</h2>
+    <ul>
+        {% for user in data.users %}
+            <li>{{ user.name }} (ID: {{ user.id }})</li>
+        {% endfor %}
+    </ul>
+    <h2>Doctors</h2>
+    <ul>
+        {% for doctor in data.doctors %}
+            <li>{{ doctor.name }} (ID: {{ doctor.id }})</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>

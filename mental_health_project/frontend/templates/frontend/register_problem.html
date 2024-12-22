@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register Problem for a Patient</title>
+</head>
+<body>
+    <h1>Register Problem for a Patient</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="patient_id">Enter Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id">
+        <label for="problem">Enter Problem:</label>
+        <input type="text" id="problem" name="problem">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>

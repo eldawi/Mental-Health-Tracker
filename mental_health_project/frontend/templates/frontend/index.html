@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mental Health System</title>
+</head>
+<body>
+    <h1>--- Mental Health System ---</h1>
+    <ul>
+        <li><a href="{% url 'add_patient' %}">1. Add Patient</a></li>
+        <li><a href="{% url 'add_doctor' %}">2. Add Doctor</a></li>
+        <li><a href="{% url 'view_users' %}">3. View All Users</a></li>
+        <li><a href="{% url 'register_problem' %}">4. Register Problem for a Patient</a></li>
+        <li><a href="{% url 'book_therapy_session' %}">5. Book Therapy Session</a></li>
+        <li><a href="{% url 'follow_up' %}">6. Follow Up for a Patient</a></li>
+        <li><a href="{% url 'consult_doctor' %}">7. Consult Doctor</a></li>
+        <li><a href="{% url 'prescribe_medication' %}">8. Doctor: Prescribe Medication</a></li>
+        <li><a href="{% url 'set_sessions' %}">9. Doctor: Set Sessions</a></li>
+    </ul>
+</body>
+</html>

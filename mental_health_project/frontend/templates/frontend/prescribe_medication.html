@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prescribe Medication</title>
+</head>
+<body>
+    <h1>Prescribe Medication</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="doctor_id">Enter Doctor ID:</label>
+        <input type="text" id="doctor_id" name="doctor_id">
+        <label for="patient_id">Enter Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id">
+        <label for="medication">Enter Medication:</label>
+        <input type="text" id="medication" name="medication">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>

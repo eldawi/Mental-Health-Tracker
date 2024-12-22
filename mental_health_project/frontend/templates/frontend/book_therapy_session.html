@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Therapy Session</title>
+</head>
+<body>
+    <h1>Book Therapy Session</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="patient_id">Enter Patient ID:</label>
+        <input type="text" id="patient_id" name="patient_id">
+        <label for="session_details">Enter Session Details:</label>
+        <input type="text" id="session_details" name="session_details">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>

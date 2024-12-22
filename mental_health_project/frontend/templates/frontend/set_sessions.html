@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Set Sessions</title>
+</head>
+<body>
+    <h1>Set Sessions</h1>
+    <form method="POST" action="">
+        {% csrf_token %}
+        <label for="doctor_id">Enter Doctor ID:</label>
+        <input type="text" id="doctor_id" name="doctor_id">
+        <label for="session_details">Enter Session Details:</label>
+        <input type="text" id="session_details" name="session_details">
+        <button type="submit">Submit</button>
+    </form>
+    <a href="{% url 'index' %}">Back to Home</a>
+</body>
+</html>
