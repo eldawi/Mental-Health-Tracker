@@ -1,6 +1,6 @@
 import json
 
-# Initialize or load data from a JSON file (acting as our database)
+# Initialize or load data from a JSON file (acting as the database)
 data_file = "mental_health_system.json"
 
 def load_data():
