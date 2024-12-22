@@ -1,0 +1,15 @@
+{
+    "users": [],
+    "patients": [
+        {
+            "name": "Omar",
+            "id": "221000152"
+        }
+    ],
+    "doctors": [
+        {
+            "name": "shaaban abdelraheem",
+            "id": "1"
+        }
+    ]
+}
