@@ -1,3 +1,7 @@
+let name = prompt("What's your name?");
+document.getElementById("greeting").textContent = "Hello, " + name;
+
+
 document.getElementById("submit").addEventListener("click", function() {
     // Get values from the form
     const mood = document.getElementById("mood").value;
