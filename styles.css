@@ -87,9 +87,9 @@ button:hover {
 }
 
 #request-psychiatrist {
-    background-color: #6a006a; /* Dark purple for the request button */
+    background-color: #8B0000; /* Dark red */
 }
 
 #request-psychiatrist:hover {
-    background-color: #800080; /* Lighter purple on hover */
+    background-color: #610000; /* Lighter purple on hover */
 }
