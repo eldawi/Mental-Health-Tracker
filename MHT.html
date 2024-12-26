@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +8,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<style>
+    
+    #div1 {
+        float: left;
+        width:33.33% ;
+    }
+
+    #div2 {
+        width:33.33% 
+        margin: 0 auto;
+    }
+
+    #div3 {
+        float: right;
+         width:33.33% 
+    }
+
+</style>
 
     <div class="container">
-        <h1>Mental Health Tracker</h1>
+        <h1 style="color:Black; font-family:times-new-roman">MHT</h1>
+        <h3 style="color:Black; text-align:center ; font-family:monospace;"; >BE HEALTHY</h3>
+
+                <!-- Mood History -->
+        <div id="div3">
+            <div class="history">
+            <h2>History</h2>
+            <ul id="history-list">
+                <!-- Entries will appear here -->
+
+            </ul>
+        </div>
+        </div>
 
         <!-- Mood Tracker Form -->
         <div class="form">
-            <h2>Track Your Mood</h2>
+            <h2 id="greeting">
+            </h2>
+
+
             <label for="mood">How do you feel today?</label>
+
             <select id="mood">
                 <option value="Happy">Happy</option>
                 <option value="Neutral">Neutral</option>
@@ -24,23 +59,22 @@
             </select>
 
             <label for="notes">Notes</label>
-            <textarea id="notes" rows="4" placeholder="Write your thoughts..."></textarea>
-
+            <textarea id="notes" rows="4" placeholder="Write your thoughts."></textarea>
             <label for="rating">Mood Rating (1-10)</label>
             <input type="number" id="rating" min="1" max="10" placeholder="Rate your mood from 1 to 10">
-
+            <h6> </h6>
             <button id="submit">Submit</button>
         </div>
 
-        <!-- Mood History -->
-        <div class="history">
-            <h2>Your Mood History</h2>
-            <ul id="history-list">
-                <!-- Entries will appear here -->
-            </ul>
+        <!-- Link to psychiatrist request page -->
+        <div class="psychiatrist-request">
+            <a href="request-psychiatrist.html">
+                <button id="request-psychiatrist">Request a Psychiatrist</button>
+            </a>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+    </div>
+<script src="script.js"></script>
+
 </body>
 </html>
