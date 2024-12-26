@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Psychiatrist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+    #div1 {
+        float: left;
+        width:33.33% ;
+    }
+
+    #div2 {
+        width:33.33% 
+        margin: 0 auto;
+    }
+
+    #div3 {
+        float: right;
+    }
+
+    #button2 {
+    width: 100%;
+    padding: 12px;
+    background-color: #800080; /* Purple color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    }
+
+</style>
+
+    <div class="container">
+        <h1 style="color:Black; font-family:times-new-roman">MHT</h1>
+        <h3 style="color:Black; text-align:center ; font-family:monospace;"; >BE HEALTHY</h3>
+
+
+        <div class="form">
+            <h2>Request a doctor</h2>
+
+
+
+            <label for="issue">Enter your issue below:</label>
+            <textarea id="issue" rows="6" placeholder="Please describe your mental health concern."></textarea>
+
+            <label for="contact">Your contact information</label>
+            <input type="text" id="contact" placeholder="Enter email or phone number">
+<p> </p>
+            <button id="submit-request">Submit Request</button>
+
+<div id="div3">
+        <div class="back-link">
+            <a href="index.html">
+                <button id="button2">Back to Tracker</button>
+            </a>
+        </div>
+</div>
+
+        </div>
+
+    </div>
+
+    <script src="request-psychiatrist.js"></script>
+</body>
+</html>
